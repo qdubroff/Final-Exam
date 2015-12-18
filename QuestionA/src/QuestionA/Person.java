@@ -16,58 +16,72 @@ public abstract class Person implements iPersonRead, iPersonReadWrite {
 	private String phone_number;
 	private String email_address;
 
+	@Override
 	public String getFirstName() {
 		return FirstName;
 	}
 
+	@Override
 	public void setFirstName(String FirstName) {
 		this.FirstName = FirstName;
 	}
 
+	@Override
 	public String getMiddleName() {
 		return MiddleName;
 	}
 
+	@Override
 	public void setMiddleName(String MiddleName) {
 		this.MiddleName = MiddleName;
 	}
 
+	@Override
 	public String getLastName() {
 		return LastName;
 	}
 
+	@Override
 	public void setLastName(String LastName) {
 		this.LastName = LastName;
 	}
 
+	@Override
 	public Date getDOB() {
 		return DOB;
 	}
 
+	@Override
 	public void setDOB(Date DOB) {
 		this.DOB = DOB;
 	}
 
+	@Override
 	public void setAddress(String newAddress) {
 		address = newAddress;
 	}
 
+	@Override
 	public String getAddress() {
 		return address;
 	}
 
+	@Override
 	public void setPhone(String newPhone_number) {
 		phone_number = newPhone_number;
 	}
 
+	@Override
 	public String getPhone() {
 		return phone_number;
 	}
 
+	@Override
 	public void setEmail(String newEmail) {
 		email_address = newEmail;
 	}
 
+	@Override
 	public String getEmail() {
 		return email_address;
 	}
